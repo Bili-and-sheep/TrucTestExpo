@@ -1,7 +1,20 @@
 {
   "name": "tructestexpo",
-  "main": "expo-router/entry",
   "version": "1.0.0",
+  "private": true,
+  "description": "This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).",
+  "homepage": "https://github.com/Bili-and-sheep/TrucTestExpo#readme",
+  "bugs": {
+    "url": "https://github.com/Bili-and-sheep/TrucTestExpo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bili-and-sheep/TrucTestExpo.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -11,19 +24,23 @@
     "test": "jest --watchAll",
     "lint": "expo lint"
   },
-  "jest": {
-    "preset": "jest-expo"
-  },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
+    "@hookform/resolvers": "^3.10.0",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
-    "expo": "~52.0.27",
+    "@react-navigation/native-stack": "^7.2.0",
+    "@react-navigation/stack": "^7.1.1",
+    "@rneui/base": "^4.0.0-rc.7",
+    "@rneui/themed": "^4.0.0-rc.8",
+    "expo": "^52.0.27",
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.4",
     "expo-font": "~13.0.3",
     "expo-haptics": "~14.0.1",
+    "expo-image": "~2.0.4",
     "expo-linking": "~7.0.4",
+    "expo-maps": "^0.6.1",
     "expo-router": "~4.0.17",
     "expo-splash-screen": "~0.29.21",
     "expo-status-bar": "~2.0.1",
@@ -32,14 +49,17 @@
     "expo-web-browser": "~14.0.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-hook-form": "^7.54.2",
     "react-native": "0.76.6",
     "react-native-gesture-handler": "~2.20.2",
+    "react-native-maps": "1.18.0",
     "react-native-reanimated": "~3.16.1",
-    "react-native-safe-area-context": "4.12.0",
+    "react-native-safe-area-context": "^4.14.1",
     "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "expo-image": "~2.0.4"
+    "yup": "^1.6.1",
+    "@react-native-async-storage/async-storage": "1.23.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -51,5 +71,7 @@
     "react-test-renderer": "18.3.1",
     "typescript": "^5.3.3"
   },
-  "private": true
+  "jest": {
+    "preset": "jest-expo"
+  }
 }
